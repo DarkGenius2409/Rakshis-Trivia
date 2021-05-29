@@ -35,8 +35,8 @@ export default Vue.extend({
   position: absolute
   top: 50%
   left: 50%
-  -ms-transform: translate(-50%, -30%)
-  transform: translate(-50%, -70%)
+  -ms-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
 
 .link
   text-decoration: none
