@@ -1,6 +1,6 @@
 <template>
-  <div class="center intro">
-    <h1 class="display-4">
+  <div class="content">
+    <h1 style="font-size:8vw;" class="display-4">
       Welcome to... <br />
       <span class="brand">Rakshi's Trivia!</span>
     </h1>
@@ -45,8 +45,7 @@ export default Vue.extend({
 .brand
   font-family: 'Satisfy', cursive
 
-.display-4
-  font-size: 4vw
-.display-1
-  font-size: 4vw
+.content
+  margin-top: 7vw
+  text-align: center
 </style>
