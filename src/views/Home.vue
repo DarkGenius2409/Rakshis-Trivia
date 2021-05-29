@@ -44,4 +44,9 @@ export default Vue.extend({
 
 .brand
   font-family: 'Satisfy', cursive
+
+.display-4
+  font-size: 4vw
+.display-1
+  font-size: 4vw
 </style>
