@@ -1,12 +1,6 @@
 <template>
-  <div class="container">
-    <v-card
-      class="mx-auto"
-      min-width="700"
-      max-width="800"
-      min-height="400"
-      outlined
-    >
+  <div class="content">
+    <!-- <v-card class="mx-auto" max-width="50vw" min-height="30vh" outlined>
       <v-list-item three-line>
         <v-list-item-content>
           <div class="overline mb-4">
@@ -39,6 +33,53 @@
         <v-btn
           v-on:click="() => checkAnswer(this.answer)"
           class="text-right"
+          outlined
+          rounded
+          color="cyan"
+        >
+          Submit
+        </v-btn>
+      </v-card-actions>
+    </v-card> -->
+    <v-card
+      class="mx-auto"
+      min-height="25vh"
+      min-width="30vw"
+      max-width="75vw"
+      elevation-3
+      hover
+    >
+      <v-card-media src="somes" height="30%" contain> </v-card-media>
+      <v-card-title primary-title class="headline">
+        <div class="overline mb-4">
+          {{ categories[this.$route.params.category].name }}
+          {{
+            categories[this.$route.params.category].questions[
+              this.$route.params.id
+            ].id + 1
+          }}
+        </div>
+      </v-card-title>
+      <v-card-text class="text-wrap display-3 question mb-1">
+        {{
+          categories[this.$route.params.category].questions[
+            this.$route.params.id
+          ].question
+        }}
+      </v-card-text>
+      <v-card-subtitle class="answer">
+        <v-text-field
+          v-model="answer"
+          label="Answer"
+          :rules="rules"
+          hide-details="auto"
+        ></v-text-field>
+      </v-card-subtitle>
+      <v-card-actions class="custom_cls">
+        <v-spacer></v-spacer>
+        <v-btn
+          v-on:click="() => checkAnswer(this.answer)"
+          class="text-right btn"
           outlined
           rounded
           color="cyan"
@@ -96,10 +137,10 @@ export default Vue.extend({
 
 .answer
   text-align: center
-  width: 40%
+  width: 70%
   margin: auto
   margin-top: 1.5rem
-  display: block
+  display: inline-block
 
 .container
   margin: 0
@@ -109,9 +150,8 @@ export default Vue.extend({
   -ms-transform: translate(-50%, -25%)
   transform: translate(-50%, -75%)
 
-.custom_cls
-  display: block
-  width: 100%
+.btn
+  margin-bottom: 2vh
 
 .text-right
   float: right
