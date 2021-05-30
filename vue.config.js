@@ -1,5 +1,6 @@
 module.exports = {
-  transpileDependencies: [
-    'vuetify'
-  ]
-}
+  transpileDependencies: ["vuetify"],
+  pwa: {
+    name: "Rakshi's Trivia", // <---- this is PWA name
+  },
+};
