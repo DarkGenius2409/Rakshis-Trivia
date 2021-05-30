@@ -18,7 +18,7 @@ export default new Vuex.Store({
           {
             id: 1,
             question: "When was Rakshi's sister born?",
-            answer: "May 31, 1985",
+            answer: "May 31, 1989",
           },
           {
             id: 2,

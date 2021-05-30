@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="content">
     <h1 class="display-4">Congratulations!</h1>
     <p class="subtitle-1">You got it right!</p>
     <v-btn

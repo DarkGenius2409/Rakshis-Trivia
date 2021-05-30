@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="content">
     <h1 class="display-4">Sorry, you got it wrong.</h1>
     <p class="subtitle-1">
       The correct answer was {{ this.$route.params.correctAnswer }}

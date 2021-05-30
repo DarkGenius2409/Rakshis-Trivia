@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="content">
     <h1 class="display-4">I am sorry😥.</h1>
     <p class="subtitle-1">The page you were searching for is not available.</p>
     <v-btn

@@ -24,7 +24,27 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="stylus" scoped>
-h1
+<style lang="stylus">
+.display-2
   font-weight: 200
+
+@media only screen and (min-width: 400px) and (max-width: 768px)
+  .display-4
+    font-size: 2rem
+  .display-2
+    font-size: 0.5rem
+  .display-1
+    font-size: 0.0625rem
+  .subtitle-1
+    font-size: 0.125rem
+
+@media only screen and (max-width: 400px)
+  .display-4
+    font-size: 1rem
+  .display-2
+    font-size: 0.25rem
+  .display-1
+    font-size: 0.03125rem
+  .subtitle-1
+    font-size: 0.0625rem
 </style>
